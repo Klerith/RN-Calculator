@@ -10,7 +10,7 @@ const { darkGray, orange, lightGray } = colors;
 export const CalculatorScreen = () => {
 
   const { 
-    number, prevNumber, buildNumber, clean, deleteOperation,
+    number, prevNumber, formula, buildNumber, clean, deleteOperation,
     addOperation, multiplyOperation, divideOperation, subtractOperation,
     calculateResult, toggleSign, 
 
@@ -24,7 +24,7 @@ export const CalculatorScreen = () => {
           style={ styles.mainResult }
           adjustsFontSizeToFit
           numberOfLines={ 1 }
-        >{ number }</Text>
+        >{ formula }</Text>
         <Text 
           adjustsFontSizeToFit
           numberOfLines={ 1 }
