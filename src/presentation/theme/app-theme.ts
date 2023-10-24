@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
         color: colors.textSecondary, // white
         fontSize: 40,
         textAlign: 'right',
-        fontWeight: '200'
+        fontWeight: '300'
     },
     row: {
         flexDirection: 'row',

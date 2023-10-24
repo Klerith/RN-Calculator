@@ -19,19 +19,22 @@ export const CalculatorScreen = () => {
   return (
     <View style={ styles.calculatorContainer }>
 
-      <View style={ { paddingHorizontal: 30 } }>
-        <Text style={ styles.subResult }>{ ( prevNumber === '0' ) ? '' : prevNumber }</Text>
+      <View style={ { paddingHorizontal: 30, paddingBottom: 20 } }>
         <Text
           style={ styles.mainResult }
           adjustsFontSizeToFit
           numberOfLines={ 1 }
         >{ number }</Text>
+        <Text 
+          adjustsFontSizeToFit
+          numberOfLines={ 1 }
+          style={ styles.subResult }>{ ( prevNumber === '0' ) ? ' ' : prevNumber }</Text>
 
       </View>
 
 
 
-
+    
       <View style={ styles.row }>
 
         {/* <Pressable style={ styles.button }>
